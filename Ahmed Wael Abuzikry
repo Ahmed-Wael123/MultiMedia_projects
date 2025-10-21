@@ -1,0 +1,31 @@
+# Name       : Ahmed Wael Abuzikry.
+# Year       : 2 .
+# Semester   : 1 .
+# Department : Compuer Science.
+# Note : انا محول من كفرالشيخ ولسة ورقى مجاش.
+
+##################################################
+
+product1 = float(input("Please enter price of first product: "))      #هنا عرفت متغير و بطلب من اليوز يدخل سعر المنتج الأول 
+product2 = float(input("Please enter price of second product: "))     #هنا عرفت متغير و بطلب من اليوزر يدخل سعر المنتج الثاني
+product3 = float(input("Please enter price of third product: "))      #هنا عرفت متغير و بطلب من اليوزر يدخل سعر المنتج الثالث
+
+
+budget = float(input("Please enter of the budget: "))                 #هنا عرفت متغير و بطلب من اليوزر يدخل الميزانية الكلية اللي معاة
+
+#  Calculate the total cost of the items :
+total_cost = product1 + product2 + product3                           #هنا عرفت متغير والبرنامج بيحسب تكلفة المنتجات اللى عندى   
+
+# Compare the total cost with the budget :
+if total_cost <= budget:                                              #هنا حطيت شرط لو تكلفة المنتجات اقل من او تساوى الميزانية يحسب الباقى اللى مع اليوزر
+    # 5. Calculate how much money is left :
+    money_left = budget - total_cost
+    print("Total cost:", total_cost)
+    print("You are within the budget.")
+    print("You have", money_left, "left.")
+else:                                                                 #هنا لو الشرط اللى فوق متحققش ينزل هنا ويحقق اللى جواة
+    #  Calculate how much more money is needed :
+    money_needed = total_cost - budget                                
+    print("Total cost:", total_cost)
+    print("You are over the budget.")
+    print("You need", money_needed, "more to reach the budget.")
